@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Estudo JS</title>
+    </head>
+<body>
+    <div id="app">
+        <button onclick="addBox()" name="btnAdd" id="btnAdd">Adicionar</button>
+    </div>
+<script>
+    var box = document.createElement('div');
+    box.setAttribute('class', 'box')
+    box.style.width = 100;
+    box.style.height = 100;
+    box.style.backgroundColor = '#f00';
+    
+    function addBox(){
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(box);
+        containerElement.appendChild(br);
+    }
+    
+</script>
+</body>
+</html>
